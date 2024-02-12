@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -22,6 +26,20 @@ footer {
   font-weight: bold;
 }
 
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #151515;
+  padding: 5px;
+
+  text-align: center;
+
+  position: sticky;
+  top: 0;
+}
+
 nav a {
   font-size: 18px;
   font-weight: 400;
@@ -37,13 +55,6 @@ nav li {
   display: inline;
   list-style-type: none;
   margin-right: 20px;
-}
-
-nav {
-  background-color: #151515;
-  padding: 5px;
-
-  text-align: center;
 }
 
 .profile header {
@@ -84,8 +95,13 @@ nav {
 aside {
   float: right;
   width: 25%;
+  padding-left: 20px;
 }
 
-* {
-  box-sizing: border-box;
+@media screen and (max-width: 1000px) {
+  #contennt,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
 }
