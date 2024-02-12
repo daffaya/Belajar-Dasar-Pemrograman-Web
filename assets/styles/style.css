@@ -28,3 +28,21 @@ nav a:hover {
 .profile header {
   text-align: center;
 }
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center; /*untuk mengatur bagian mana yang di-crop*/
+}
+
+.profile-img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 24px;
+  margin-top: 24px;
+}
