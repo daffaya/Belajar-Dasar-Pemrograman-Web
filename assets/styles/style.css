@@ -1,5 +1,12 @@
 body {
   font-family: "Quicksand", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
 }
 
 h2,
@@ -19,10 +26,24 @@ nav a {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  color: white;
 }
 
 nav a:hover {
   font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #151515;
+  padding: 5px;
+
+  text-align: center;
 }
 
 .profile header {
@@ -43,6 +64,28 @@ nav a:hover {
 .card {
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 24px;
-  margin-top: 24px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #212121;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+* {
+  box-sizing: border-box;
 }
